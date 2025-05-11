@@ -63,4 +63,33 @@
   margin-top: 60px;
   top: 60px;
 }
-  
+
+.main-block {
+  width: auto;
+  /* background-color: aquamarine; */
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  padding: 30px 200px 0 200px;
+}
+
+.main-block-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000000;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.main-block-content {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000000;
+  line-height: 2rem;
+  text-align: left;
+  text-wrap: break-word;
+}
