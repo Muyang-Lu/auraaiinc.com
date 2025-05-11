@@ -1,0 +1,101 @@
+.footer-container {
+    /* background-color: rgb(0, 0, 0); */
+    z-index: 100;
+    height: 300px;
+    width: 100vw;
+    border-width: 1px 0 1px 0;
+    border-color: grey;
+    left: 0px;
+}
+
+.footer-content {
+    /* background-color: rgb(0, 0, 0); */
+    z-index: 100;
+    height: 200px;
+    margin: 0 50px;
+    width: calc(100% - 100px);
+    border-width: 0.5px 0 0.5px 0;
+    border-color: rgb(55, 55, 55);
+    border-style: solid;
+    display: flex;
+    flex-direction: row;
+    padding-top: 25px;
+}
+
+.footer-logo-block {
+    width:15%;
+    margin-right:50px;
+    font-family: 'jaapokkisubtractRegular';
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.footer-logo-block-light {
+    width:15%;
+    margin-right:50px;
+    font-family: 'jaapokkisubtractRegular';
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+
+.footer-logo-block-ai{
+    font-family: 'Kiona';
+    position: relative;
+    top: -5px;
+    font-size: 1.6rem;
+    margin-left: 3px;
+}
+
+.footer-content-block {
+    width: 20%;
+    margin: 0 20px;
+    color: rgb(44, 44, 44);
+}
+
+.footer-content-block-light {
+    /* background-color: rgb(0, 0, 0); */
+    width: 20%;
+    margin: 0 20px;
+    color: rgb(137, 137, 137);
+}
+
+.footer-content-block-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    /* color: #A7A7A7; */
+    text-align: left;
+    margin: 0 20px;
+}
+
+.footer-content-block-item {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    /* color: #505050; */
+    text-align: left;
+    margin: 0 20px;
+    cursor: pointer;
+    padding-top: 20px;
+}
+
+.footer-copyright {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #505050;
+    text-align: left;
+    padding-left: 70px;
+    padding-top: 20px;
+}

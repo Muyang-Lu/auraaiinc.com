@@ -1,33 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
+
+import MainPage from './Pages/MainPage';
+import AuraCat from './Pages/AuraCat';
+import AuraDog from './Pages/AuraDog';
+import AuraBioLab from './Pages/AuraBioLab';
+import Fundraising from './Pages/Fundraising';
+import JoinUs from './Pages/JoinUs';
+import Team from './Pages/Team';
+
+
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/aura-cat-intro" element={<AuraCat />} />
+          <Route path="/aura-dog-intro" element={<AuraDog />} />
+          <Route path="/aura-biolab-intro" element={<AuraBioLab />} />
+          <Route path="/fundraising" element={<Fundraising />} />
+          <Route path="/join-us" element={<JoinUs />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }

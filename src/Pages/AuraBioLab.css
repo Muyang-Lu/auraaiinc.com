@@ -1,0 +1,119 @@
+.aura-biolab-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* border: 1px solid rgb(156, 156, 194); */
+}
+
+.aura-biolab-name-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    /* background-color: rgb(156, 156, 194); */
+    top: 0;
+    margin: 0;
+    /* border: 1px solid rgb(156, 156, 194); */
+}
+
+.aura-biolab-name-block-logo {
+    width: 300px;
+    height: 300px;
+}
+
+.aura-biolab-name-block-title {
+    width: 50%;
+    height: 100%;
+    /* background-color: rosybrown; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.aura-biolab-name-block-title-aurabiolab-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* background-color: saddlebrown; */
+}
+.aura-biolab-name-block-title-aura {
+    font-family: 'JaapokkisubtractRegular';
+    font-size: 6rem;
+    font-weight: 700;
+    color: #570D57;
+    /* background-color: blueviolet; */
+}
+
+.aura-biolab-name-block-title-biolab {
+    position: relative;
+    font-family: 'Kiona';
+    font-size: 6rem;
+    font-weight: 300;
+    color: #570D57;
+    /* background-color: beige; */
+    top: -15px;
+}
+
+.aura-biolab-name-block-title-description {
+    /* position: relative; */
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #570D57;
+    top: 45%;
+    left: -14%;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* background-color: #435a3b; */
+}
+
+.aura-biolab-name-block-title-try-button-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    /* background-color: #7d8d77; */
+}
+
+.aura-biolab-name-block-title-try-button {
+    /* position: relative; */
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #ffffff;
+    top: 50%;
+    left: -14%;
+    width: 400px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #570D57;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+.aura-biolab-name-block-title-try-button:hover {
+    background-color: #781e78;
+    cursor: pointer;
+    box-shadow: 0 0 10px #721372;
+}
+
+.aura-biolab-name-block-title-try-button:active {
+    background-color: #a841a8;
+    cursor: pointer;
+}
+
