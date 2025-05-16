@@ -182,6 +182,59 @@ const AuraCat: React.FC = () => {
                     </div>
                 </div>
 
+                <div className='main-block aura-cat-ai-chat'>
+                    <div className='main-block-tag'>Cat with AI</div>
+                    <div className='main-block-title'>Ask AI about Your Cats ...</div>
+                    <div className='ai-chat-row'>
+                        <img className='ai-chat-image' src="assets/ai-chat-bar-q1.png" alt="Aura Cat AI Chat" />
+                        {[
+                            { left: 420, top: 20, rotate: -6, height: 48 },
+                            { left: 520, top: 90, rotate: 7, height: 38 },
+                            { left: 740, top: 30, rotate: 4, height: 44 },
+                            { left: 750, top: 110, rotate: -8, height: 46 },
+                        ].map((pos, idx) => (
+                            <img
+                                key={idx}
+                                className='ai-chat-image'
+                                src={`assets/ai-chat-bar-q${idx + 2}.png`}
+                                alt="Aura Cat AI Chat"
+                                style={{
+                                    left: `${pos.left}px`,
+                                    top: `${pos.top}px`,
+                                    transform: `rotate(${pos.rotate}deg)`,
+                                    height: `${pos.height}px`,
+                                    opacity: 0.7,
+                                    pointerEvents: 'none',
+                                }}
+                            />
+                        ))}
+                        <div className='ai-chat-response-container'>
+                            <div className='ai-chat-response'>
+                                <div style={{ fontWeight: 'bold', fontSize: '18px', marginBottom: '8px', textAlign: 'left' }}>
+                                    Today's Qbi Status
+                                </div>
+                                <ul style={{ paddingLeft: '20px', margin: 0, textAlign: 'left', lineHeight: '2.5' }}>
+                                    <li>
+                                        <span style={{ color: '#4CAF50', fontWeight: 500 }}>Activity:&nbsp;</span> Qbi spent <b>2 hours</b> playing and <b>30 minutes</b> exploring new spots.
+                                    </li>
+                                    <li>
+                                        <span style={{ color: '#2196F3', fontWeight: 500 }}>Rest:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Enjoyed <b>15 hours</b> of restful sleep, mostly in her favorite sunny corner.
+                                    </li>
+                                    <li>
+                                        <span style={{ color: '#FF9800', fontWeight: 500 }}>Meals:&nbsp;&nbsp;&nbsp;&nbsp;</span> Ate <b>3 times</b> today, with a healthy appetite.
+                                    </li>
+                                    <li>
+                                        <span style={{ color: '#9C27B0', fontWeight: 500 }}>Mood:&nbsp;&nbsp;&nbsp;&nbsp;</span> Appears <b>happy</b> and <b>relaxed</b>, with lots of purring and gentle tail flicks.
+                                    </li>
+                                </ul>
+                                <div style={{ marginTop: '12px', color: '#888', textAlign: 'left' }}>
+                                    <em>Tip: Qbi's activity level is above average today. Keep up the great care!</em>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div className='main-block aura-cat-security-block'>
                     <div className='security-container'>
                         <div className='security-container-left'>
@@ -293,7 +346,7 @@ const AuraCat: React.FC = () => {
                 </div>
 
                 <div className='main-block aura-cat-try-button'>
-                    <div className='main-block-title' style={{width: '400px'}}>To Explore More ...</div>
+                    <div className='main-block-title' style={{ width: '400px' }}>To Explore More ...</div>
                     <div className='aura-cat-name-block-title-try-button'>
                         Try AuraCat now!
                     </div>
