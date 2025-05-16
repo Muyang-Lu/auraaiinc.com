@@ -17,14 +17,15 @@ const Heading: React.FC = () => {
             <div className='heading-tags'>
                 <div className='heading-tag-mune'
                     onMouseEnter={() => handleOpenDropdown("prupose")}
+                    onClick={() => window.location.href = "/"}
                 >Prupose</div>
-                {dropdownContainer === "prupose" && (
+                {/* {dropdownContainer === "prupose" && (
                     <div className='heading-dropdown-container' style={{ left: "240px" }}>
                         <div className='heading-dropdown-item' onClick={() => window.location.href = "/"}>Talk to nature with AI</div>
                         <div className='heading-dropdown-item' onClick={() => window.location.href = "/"}>Pet Identification</div>
                         <div className='heading-dropdown-item' onClick={() => window.location.href = "/"}>Pet Health</div>
                     </div>
-                )}
+                )} */}
                 <div
                     className='heading-tag-mune'
                     onMouseEnter={() => handleOpenDropdown("products")}

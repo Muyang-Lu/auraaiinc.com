@@ -24,7 +24,7 @@
 }
 
 .aura-biolab-name-block-title {
-    width: 50%;
+    width: 100%;
     height: 100%;
     /* background-color: rosybrown; */
     position: relative;
@@ -43,6 +43,7 @@
     width: 100%;
     /* background-color: saddlebrown; */
 }
+
 .aura-biolab-name-block-title-aura {
     font-family: 'JaapokkisubtractRegular';
     font-size: 6rem;
@@ -81,10 +82,11 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     width: 100%;
-    height: 100px;
+    height: 60px;
     /* background-color: #7d8d77; */
+    position: relative;
 }
 
 .aura-biolab-name-block-title-try-button {
@@ -117,3 +119,439 @@
     cursor: pointer;
 }
 
+.aura-biolab-name-block-logo {
+    position: absolute;
+    bottom: -105px;
+    width: 250px;
+    object-fit: contain;
+    left: 200px;
+}
+
+.aura-biolab-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.biolab-video-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border: 1px solid rgb(156, 156, 194);
+    border-radius: 30px;
+    padding: 50px 50px;
+    margin: 20px;
+    position: relative;
+    /* padding-bottom: 50px; */
+    /* height: 100%; */
+}
+
+.biolab-video-tag-block {
+    position: absolute;
+    width: 300px;
+    height: 60px;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    border-radius: 100px;
+}
+
+.biolab-video-tag {
+    position: absolute;
+    width: 300px;
+    height: 60px;
+    background-color: #570D57;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    color: white;
+    border-radius: 100px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 70px;
+}
+
+.biolab-video-tag-circle-bg-1 {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: #570D5750;
+    left: -30px;
+    bottom: -30px;
+    z-index: 1;
+    border-radius: 100px;
+}
+.biolab-video-tag-circle-bg-2 {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-color: #570D5750;
+    left: -15px;
+    bottom: -15px;
+    z-index: 1;
+    border-radius: 100px;
+}
+
+.biolab-video-tag-ai-icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    /* background-color: #570D57; */
+    left: 15px;
+    bottom: 15px;
+    z-index: 1;
+    object-fit: cover;
+    filter: brightness(100);
+}
+
+.aura-biolab-feature-block {
+    width: 100%;
+    background-color: #F5F1F3;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;    
+}
+
+.aura-biolab-feature-block-content {
+    width: 100%;
+    /* background-color: #6c536c; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    padding-bottom: 5z0px;
+}
+
+.feature-item-tag {
+    width: 15px;
+    height: 360px;
+    position: relative;
+    left: 0;
+    /* border:1px solid #570D57; */
+}
+
+.feature-item-tag-color-block {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 12px;
+    border-radius: 50px;
+    height: 60px;
+    background-color: #570D57;
+    transition: all ease 0.3s;
+}
+
+.feature-list-block {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 360px;
+    /* border:1px solid #570D57; */
+}
+.feature-item-highlight {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 40px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+    padding: 0 50px 10px 20px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    /* background-color: #ffffff; */
+    border-radius: 10px;
+    height: 40px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+    padding: 0 50px 10px 20px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.feature-item-title-highlight {
+    width: auto;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 1000;
+    color: #832e83;
+    bottom: -13px;
+    position: relative;
+    transition: all ease 0.3s;
+}
+
+.feature-item-content-highlight {
+    width: auto;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #832e83;
+    transition: all ease 0.3s;
+}
+
+.feature-item-title {
+    width: auto;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #000000;
+    bottom: 0px;
+    position: relative;
+    transition: all ease 0.3s;
+}
+
+.feature-item-content {
+    width: auto;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #000000;
+    transition: all ease 0.3s;
+}
+
+.aura-biolab-accuracy-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.accuracy-empty-deac {
+    border: 1px solid rgb(156, 156, 194);
+    border-radius: 30px;
+    width: 15%;
+    height: 300px;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.aura-biolab-accuracy-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 30px 0;
+    gap: 20px;
+}
+
+.accuracy-gt-comparison {
+    width: 70%;
+    border: 1px solid rgb(156, 156, 194);
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px #a362a3;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+.accuracy-gt-comparison:hover {
+    box-shadow: 10px 10px 20px #a362a3;
+    
+}
+
+.accuracy-gt-comparison-gt {
+    width: 100%;
+}
+
+
+.aura-biolab-matrix-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.aura-biolab-matrix-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin: 30px 0;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.matrix-card {
+    width: calc(33.3% - 64px);
+    aspect-ratio: 1;
+    border: 1px solid rgb(156, 156, 194);
+    border-radius: 30px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.matrix-card:hover {
+    box-shadow: 5px 5px 10px #a362a3;
+}
+
+.matrix-card-image {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    /* border: 1px solid #ff7cff; */
+}
+
+.matrix-card-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+    /* border: 1px solid #570D57; */
+    height: 20%;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.matrix-card-content {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+    /* border: 1px solid #570D57; */
+    height: 20%;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    color: #646464;
+}
+
+
+.aura-biolab-request-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.request-block-bg {
+    width: 100%;
+    height: 450px;
+    background-color: #570D57;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 60px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.request-block-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    height: 100%;
+    flex: 1;
+}
+
+.request-block-left-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 0.2em;
+}
+
+.request-block-left-content {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #fff;
+    opacity: 0.85;
+}
+
+.request-block-left-button {
+    margin-top: 18px;
+    padding: 12px 36px;
+    background-color: #fff;
+    color: #570D57;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    box-shadow: 0 2px 8px #570d5730;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.request-block-left-button:hover {
+    background-color: #ac6fac;
+    color: #ffffff;
+    box-shadow: 0 4px 16px #570d5740;
+}
+
+.request-block-left-button:active {
+    background-color: #792f79;
+    color: #ffffff;
+    box-shadow: 0 4px 16px #570d5740;
+}
+
+.request-block-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border: 1px solid #cd9fcd;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.request-block-right-image {
+    height: 100%;
+    object-fit: contain;
+    max-width: 100%;
+    border-radius: 20px;
+}

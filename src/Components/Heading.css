@@ -11,9 +11,7 @@
     z-index: 1000;
     backdrop-filter: blur(6px);
     background: linear-gradient(90deg, rgba(240, 240, 240, 0.90) 0%, rgba(255, 255, 255, 0.4) 100%);
-    /* background-color: rgba(255, 255, 255, 0.9); */
     cursor: pointer;
-    border-radius: 10px;
 }
 
 .heading-logo {
