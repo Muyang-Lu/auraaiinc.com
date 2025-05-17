@@ -28,7 +28,7 @@ const Footing = ({ style }: FootingProps) => {
                     <div className='footer-content-block-title'>About</div>
                     <div className='footer-content-block-item'>Team</div>
                     <div className='footer-content-block-item'>Join Us</div>
-                    <div className='footer-content-block-item'>Fundraising</div>
+                    {/* <div className='footer-content-block-item'>Fundraising</div> */}
                 </div>
             </div>
             <div className='footer-copyright'>

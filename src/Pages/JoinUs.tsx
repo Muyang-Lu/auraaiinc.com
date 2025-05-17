@@ -4,7 +4,6 @@ import Row from 'antd/lib/row';
 import Col from 'antd/lib/col';
 import Button from 'antd/lib/button';
 import Card from 'antd/lib/card';
-// import { Helmet } from 'react-helmet';
 import Heading from '../Components/Heading';
 import Footing from '../Components/Footing';
 
@@ -18,45 +17,45 @@ const JoinUs: React.FC = () => {
                 <div style={{ paddingTop: 64, paddingBottom: 64, textAlign: 'center' }}>
                     <Title level={1}>Join Our Team</Title>
                     <Title level={4} type="secondary" style={{ marginBottom: 32 }}>
-                        Help us shape the future of AI technology
+                        (We are tentatively hiring)
                     </Title>
                     <div style={{ margin: '32px 0' }}>
                         <Paragraph>
-                            We're looking for passionate individuals who want to make a difference in the world of AI.
-                            Our team is committed to developing cutting-edge solutions that transform how people interact with technology.
+                            At AuraAI, our mission is to develop AI that bridges the gap between humanity and the natural world. 
+                            <br />
+                            We translate animal behavior into clear, human-readable insights, equipping pet lovers, researchers, and veterinarians with the knowledge they need to act quickly and wisely. 
                         </Paragraph>
                     </div>
                     <Row gutter={[24, 24]} style={{ marginTop: 32, marginBottom: 32 }}>
                         <Col xs={24} md={8}>
                             <Card style={{ height: '100%' }} hoverable>
-                                <Title level={5}>Engineering</Title>
-                                <Paragraph>
-                                    Build the core technologies that power our AI solutions.
+                                <Title level={5}>Marketing Specialist</Title>
+                                <Paragraph style={{textAlign: 'left'}}>
+                                    Drive brand awareness, craft compelling narratives, and connect our mission to a global audience. Ideal candidates are creative, data-driven, and passionate about communicating the value of Aura AI.
                                 </Paragraph>
                                 <Button type="primary" ghost>
-                                    View Positions
+                                    Apply
                                 </Button>
                             </Card>
                         </Col>
                         <Col xs={24} md={8}>
                             <Card style={{ height: '100%' }} hoverable>
-                                <Title level={5}>Research</Title>
-                                <Paragraph>
-                                    Push the boundaries of what's possible in AI and machine learning.
-                                </Paragraph>
+                                <Title level={5}>Machine Learning Engineer</Title>
+                                <Paragraph style={{textAlign: 'left'}}>
+                                Join us to build computer-vision models that read animal behavior and language models that translate those insights for people. We’re looking for deep-learning talent in image/video analysis—passionate about AI that connects species and ecosystems.                                </Paragraph>
                                 <Button type="primary" ghost>
-                                    View Positions
+                                    Apply
                                 </Button>
                             </Card>
                         </Col>
                         <Col xs={24} md={8}>
                             <Card style={{ height: '100%' }} hoverable>
-                                <Title level={5}>Operations</Title>
-                                <Paragraph>
-                                    Help us scale and deliver our solutions to customers worldwide.
+                                <Title level={5}>UI/UX Designer</Title>
+                                <Paragraph style={{textAlign: 'left'}}>
+                                Design intuitive, beautiful interfaces that make advanced AI accessible and meaningful. Ideal candidates are empathetic, detail-oriented, and skilled in turning complex ideas into seamless user experiences.
                                 </Paragraph>
                                 <Button type="primary" ghost>
-                                    View Positions
+                                    Apply
                                 </Button>
                             </Card>
                         </Col>
@@ -67,19 +66,19 @@ const JoinUs: React.FC = () => {
                             <Col xs={24} sm={8}>
                                 <div>
                                     <Title level={5}>Innovation</Title>
-                                    <Paragraph>We push boundaries and challenge the status quo.</Paragraph>
+                                    <Paragraph>Relentlessly redefining what's possible.</Paragraph>
                                 </div>
                             </Col>
                             <Col xs={24} sm={8}>
                                 <div>
-                                    <Title level={5}>Integrity</Title>
-                                    <Paragraph>We build AI with strong ethical principles.</Paragraph>
+                                    <Title level={5}>Passionate</Title>
+                                    <Paragraph>Fueled by infectious enthusiasm, we pour heart into responsible AI.</Paragraph>
                                 </div>
                             </Col>
                             <Col xs={24} sm={8}>
                                 <div>
                                     <Title level={5}>Impact</Title>
-                                    <Paragraph>We create technology that makes a positive difference.</Paragraph>
+                                    <Paragraph>Engineering technology that elevates lives.</Paragraph>
                                 </div>
                             </Col>
                         </Row>
@@ -94,7 +93,7 @@ const JoinUs: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <Footing />
+            <Footing style='light'/>
         </div>
     );
 };

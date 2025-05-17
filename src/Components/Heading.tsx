@@ -45,12 +45,12 @@ const Heading: React.FC = () => {
                 {dropdownContainer === "about" && (
                     <div className='heading-dropdown-container' style={{ left: "540px" }}>
                         <div className='heading-dropdown-item' onClick={() => window.location.href = "/team"}>Team</div>
-                        <div className='heading-dropdown-item' onClick={() => window.location.href = "/fundraising"}>Fundraising</div>
+                        {/* <div className='heading-dropdown-item' onClick={() => window.location.href = "/fundraising"}>Fundraising</div> */}
                         <div className='heading-dropdown-item' onClick={() => window.location.href = "/join-us"}>Join Us</div>
                     </div>
                 )}
             </div>
-            <div className='heading-aura-cat-button'>
+            <div className='heading-aura-cat-button' onClick={() => window.location.href = "/auracat"}>
                 Try AuraCat
             </div>
         </div>
