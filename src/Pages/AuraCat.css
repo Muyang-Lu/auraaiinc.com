@@ -111,6 +111,7 @@
     background-color: #285c17;
     cursor: pointer;
     box-shadow: 0 0 10px #285c17;
+    color: white;
 }
 
 .aura-cat-name-block-title-try-button:active {

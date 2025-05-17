@@ -3,8 +3,10 @@ import './AuraCat.css';
 import Heading from '../Components/Heading';
 import Footing from '../Components/Footing';
 import { LockOutlined } from '@ant-design/icons';
+import { useNavigate } from 'react-router-dom';
 
 const AuraCat: React.FC = () => {
+    const navigate = useNavigate();
     return (
         <div className="page-body">
             <Heading />
@@ -24,9 +26,9 @@ const AuraCat: React.FC = () => {
                             - Digitalize your cats life with AI.
                         </div>
                         <div className='aura-cat-name-block-title-try-button-row'>
-                            <div className='aura-cat-name-block-title-try-button' onClick={() => window.location.href = "/auracat"}>
+                            <a className='aura-cat-name-block-title-try-button' href="/auracat/">
                                 Try AuraCat now!
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -347,9 +349,9 @@ const AuraCat: React.FC = () => {
 
                 <div className='main-block aura-cat-try-button'>
                     <div className='main-block-title' style={{ width: '400px' }}>To Explore More ...</div>
-                    <div className='aura-cat-name-block-title-try-button' onClick={() => window.location.href = "/auracat"}>
+                    <a className='aura-cat-name-block-title-try-button' href="/auracat/">
                         Try AuraCat now!
-                    </div>
+                    </a>
                 </div>
 
             </div>

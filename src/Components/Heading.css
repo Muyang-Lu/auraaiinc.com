@@ -126,4 +126,5 @@
 .heading-aura-cat-button:hover {
     background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    color: white;
 }
